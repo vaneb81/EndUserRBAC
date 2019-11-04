@@ -111,24 +111,28 @@ __6. Configure Stitch Web Application__
 ## Execution & Measurement
 
 Open with Chrome or Safari your HTML page, it will load a page with general descriptions.
+
 ![query1](img/img01.png)
 
 __1. Login as Marketing__
 
 Click “Login as Marketing” button to simulate login with [marketing@yahoo.com](marketing@yahoo.com) user. HTML executes the same query each time, but Stitch Rules filter the information to be shown based on configurated roles.
 You will see results based on Marketing role, ___they will not see “Sale Date” information.___
+
 ![query1](img/img02.png)
 
 __2. Login as Sales__
 
 Click “Login as Sales” button to simulate login with [sales@yahoo.com](sales@yahoo.com) user. HTML executes the same query each time, but Stitch Rules filter the information to be shown based on configurated roles.
 You will see results based on Sales role, ___they will see All Data.___
+
 ![query1](img/img03.png)
 
 __3. Logout__
 
 Click “Logout” button, this action simulates and Anonymous login. HTML executes the same query each time, but Stitch Rules filter the information to be shown based on configurated roles.
 You will see results based on default role, ___it will not see neither “Sale Date” nor “Coupon Used” information.___
+
 ![query1](img/img04.png)
 
 __If you are curious…__
