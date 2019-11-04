@@ -101,7 +101,7 @@ __6. Configure Stitch Web Application__
     <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4/stitch.js"></script>
     ```
 * Replace __<APP_ID>__ in line 6 with the previously recorded APP ID from you Stitch Application [Refer to step 3].
-* Replace __<DATABASE>__ in line 13 with the name of your configured Database in your Stitch Application [Refer to step 3].
+* Replace __<DATABASE_NAME>__ in line 13 with the name of your configured Database in your Stitch Application [Refer to step 3].
 * Replace __<COLLECTION_ID>__ in line 16 with the name of your configured Collection in your Stitch Application [Refer to step 3].
 * Identify the “find” query that HTML is executing at “displayComments()” function
 * Identify the 2 login functions that specify Marketing and Sales roles (“logInMarketing” & “logInSales”)
