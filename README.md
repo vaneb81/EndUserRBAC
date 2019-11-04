@@ -39,7 +39,7 @@ __3. Configure Atlas Stitch application__
 * At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
 
 __4. Configure Atlas Stitch Users__
-* In Stitch console navigate on the left menu to Control__-->Users__
+* In Stitch console navigate on the left menu to Control-->__Users__
 * Navigate to the top tab menu of “Providers”, identify the Provider “Email/Password” and click on right “Edit” button
 * Turn on Provider
 * Under “User Confirmation Method” select “Automatically confirm users”
