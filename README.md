@@ -37,3 +37,22 @@ __3. Configure Atlas Stitch application__
 * In the same Stitch Interface, at “Initialize a MongoDB Collection” section, __Add Collection__. “Database Name” : __sample_supplies__, “Collection Name” : __sales__
 * In the same Stitch Interface, at “Execute a Test Request” take note __APP ID__ to be used later
 * At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
+
+__4. Configure Atlas Stitch Users__
+* In Stitch console navigate on the left menu to Control__-->Users__
+* Navigate to the top tab menu of “Providers”, identify the Provider “Email/Password” and click on right “Edit” button
+* Turn on Provider
+* Under “User Confirmation Method” select “Automatically confirm users”
+* Under “Email Confirmation URL” fill with test string [http://test](http://test)
+* Under “Password Reset URL” fill with test string [http://test](http://test)
+* “Save” your changes at the bottom right button
+* At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
+* Return to top tab menu “Users” and Add a MARKETING user:
+* * Email address: [marketing@yahoo.com](marketing@yahoo.com)
+* * Password: password123
+* * Confirm Password: password123
+* Add SALES user:
+* * Email address: [sales@yahoo.com](sales@yahoo.com)
+* * Password: password123
+* * Confirm Password: password123
+* At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
