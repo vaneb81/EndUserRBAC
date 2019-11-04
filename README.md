@@ -56,3 +56,40 @@ __4. Configure Atlas Stitch Users__
   * Password: password123
   * Confirm Password: password123
 * At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
+
+__5. Configure Atlas Stitch Rules__
+* In Stitch console navigate on the left menu to MongoDB Cluster-->__Rules__
+* The page displays the Initialized MongoDB Collection “sample_supplies.sales”
+* Add 4 fields (review field names that __match exactly__ as they are loaded in sales collection, you can review those in compass which was previously connected):
+    * saleDate
+    * storeLocation
+    * couponUsed
+    * purchaseMethod
+* Edit “owner” role clicking pencil icon
+* Rename role as __“_Marketing_”__
+* In “Apply When” section you need to specify that this role will apply when authenticated user belongs to Marketing, place in the box the following code:
+    ```bash
+    {
+    "%%user.data.email": "marketing@yahoo.com"
+    }
+    ```
+* Leave Document-Level Permissions unchecked for Insert and Delete Documents
+* Click “Done Editing”
+* In the fields listed, uncheck “Write” boxes and select “Read” only for: couponUsed, purchaseMethod and storeLocation. __“saleDate” is the only one unchecked, this role will not see this field.__
+* Click “Save” in the top right button
+* Create a New Role called __“_Sales_”__
+* Insert in “Apply When” the following code:
+    ```bash
+    {
+    "%%user.data.email": "sales@yahoo.com"
+    }
+    ```
+* Leave Document-Level Permissions unchecked for Insert and Delete Documents
+* Click “Done Editing”
+* In the fields listed, select “Read” for all the fields: couponUsed, purchaseMethod, saleDate and storeLocation. __This role will see All Data.__
+* Click “Save” in the top right button
+* At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
+* Create a New Role called __“_default_”__
+* Leave all settings empty
+* Click “Done Editing”
+* In the fields listed, select “Read” only for: purchaseMethod and storeLocation. __“saleDate” and “couponUsed” are unchecked, this role will not see those fields.__
