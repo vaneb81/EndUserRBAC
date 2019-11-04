@@ -93,3 +93,17 @@ __5. Configure Atlas Stitch Rules__
 * Leave all settings empty
 * Click “Done Editing”
 * In the fields listed, select “Read” only for: purchaseMethod and storeLocation. __“saleDate” and “couponUsed” are unchecked, this role will not see those fields.__
+
+__6. Configure Stitch Web Application__
+* Download on your machine the file __“_EndUserRBAC_source.html_”__ at any path and edit it
+* At the top you will identity JavaScript import to use stitch
+    ```bash
+    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4/stitch.js"></script>
+    ```
+* Replace __<APP_ID>__ in line 6 with the previously recorded APP ID from you Stitch Application [Refer to step 3].
+* Replace __<DATABASE>__ in line 13 with the name of your configured Database in your Stitch Application [Refer to step 3].
+* Replace __<COLLECTION_ID>__ in line 16 with the name of your configured Collection in your Stitch Application [Refer to step 3].
+* Identify the “find” query that HTML is executing at “displayComments()” function
+* Identify the 2 login functions that specify Marketing and Sales roles (“logInMarketing” & “logInSales”)
+* Identify “logout” function that logs Out current connected user and logs with an Anonymous user, this function uses the “Default” role to see all the information.
+* You are free to play around with HTML code!
