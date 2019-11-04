@@ -48,11 +48,11 @@ __4. Configure Atlas Stitch Users__
 * “Save” your changes at the bottom right button
 * At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
 * Return to top tab menu “Users” and Add a MARKETING user:
-* * Email address: [marketing@yahoo.com](marketing@yahoo.com)
-* * Password: password123
-* * Confirm Password: password123
+  * Email address: [marketing@yahoo.com](marketing@yahoo.com)
+  * Password: password123
+  * Confirm Password: password123
 * Add SALES user:
-* * Email address: [sales@yahoo.com](sales@yahoo.com)
-* * Password: password123
-* * Confirm Password: password123
+  * Email address: [sales@yahoo.com](sales@yahoo.com)
+  * Password: password123
+  * Confirm Password: password123
 * At the top of the page, identify the blue notification, click on “REVIEW & DEPLOY CHANGES”, confirm and click “DEPLOY” in the next window
