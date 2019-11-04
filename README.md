@@ -93,6 +93,10 @@ __5. Configure Atlas Stitch Rules__
 * Leave all settings empty
 * Click “Done Editing”
 * In the fields listed, select “Read” only for: purchaseMethod and storeLocation. __“saleDate” and “couponUsed” are unchecked, this role will not see those fields.__
+* __Configured Roles:__
+
+![query1](img/img00.png)
+
 
 __6. Configure Stitch Web Application__
 * Download on your machine the file __“_EndUserRBAC_source.html_”__ at any path and edit it
